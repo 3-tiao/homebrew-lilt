@@ -14,6 +14,10 @@ class Lilt < Formula
   # The signed helper uses MusicKit, which requires macOS 14+.
   depends_on macos: :sonoma
 
+  # Both signed helper apps embed @rpath frameworks. Rewriting their IDs
+  # invalidates the Developer ID signatures and stapled notarization tickets.
+  preserve_rpath
+
   def install
     # Keep the binary and both signed helper apps together, then expose a
     # wrapper that points the CLI at the bundled apps.
