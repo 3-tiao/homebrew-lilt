@@ -6,8 +6,7 @@
 class Lilt < Formula
   desc "Apple Music, Audius, Jamendo, and internet-radio terminal controller"
   homepage "https://github.com/3-tiao/lilt"
-  version "1.0.0"
-  url "https://github.com/3-tiao/lilt/releases/download/v#{version}/lilt-v#{version}-darwin-arm64.tar.gz"
+  url "https://github.com/3-tiao/lilt/releases/download/v1.0.0/lilt-v1.0.0-darwin-arm64.tar.gz"
   sha256 "74ab1658955f1c3c1cdfc3d3f7f01c19a6c00d740c4ff897df896521a8bf7bfe"
   license "MIT"
 
@@ -23,7 +22,7 @@ class Lilt < Formula
     libexec.install "lilt-audio.app"
     (bin/"lilt").write_env_script libexec/"lilt",
                                   LILT_PLAYER_PATH: libexec/"lilt-player.app",
-                                  LILT_AUDIO_PATH: libexec/"lilt-audio.app"
+                                  LILT_AUDIO_PATH:  libexec/"lilt-audio.app"
     # The agent skill ships with the product; the caveats below show how to make
     # a harness see it (a formula must not write into user dotfiles itself).
     pkgshare.install "skills/music-control"
