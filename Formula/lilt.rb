@@ -45,11 +45,11 @@ class Lilt < Formula
 
   test do
     assert_match "lilt #{version}", shell_output("#{bin}/lilt version")
+    # spctl runs outside brew test's sandbox during release/install acceptance.
     %w[lilt-player lilt-audio].each do |helper|
       app = libexec/"#{helper}.app"
       system "codesign", "--verify", "--strict", app
       system "xcrun", "stapler", "validate", app
-      system "spctl", "-a", "--type", "execute", app
     end
   end
 end
