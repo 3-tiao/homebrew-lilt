@@ -11,7 +11,6 @@ class Lilt < Formula
   sha256 "74ab1658955f1c3c1cdfc3d3f7f01c19a6c00d740c4ff897df896521a8bf7bfe"
   license "MIT"
 
-  depends_on :macos
   depends_on arch: :arm64
   # The signed helper uses MusicKit, which requires macOS 14+.
   depends_on macos: :sonoma
