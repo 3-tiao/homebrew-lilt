@@ -6,8 +6,8 @@
 class Lilt < Formula
   desc "Apple Music, Audius, Jamendo, and internet-radio terminal controller"
   homepage "https://github.com/3-tiao/lilt"
-  url "https://github.com/3-tiao/lilt/releases/download/v1.0.1/lilt-v1.0.1-darwin-arm64.tar.gz"
-  sha256 "022821891a47d9657706f2bb894e38c90269effcc6c170f8fcdd2ce8507cdb9d"
+  url "https://github.com/3-tiao/lilt/releases/download/v1.0.2/lilt-v1.0.2-darwin-arm64.tar.gz"
+  sha256 "c578076efdaa84cc6fafbbdffc259dea7c336d1806914e9201653b8409edc923"
   license "MIT"
 
   depends_on arch: :arm64
