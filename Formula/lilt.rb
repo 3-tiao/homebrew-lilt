@@ -1,4 +1,4 @@
-# Homebrew formula for lilt v1.0.1.
+# Homebrew formula for lilt v1.0.3.
 #
 # The published copy lives in `3-tiao/homebrew-lilt/Formula/lilt.rb`.
 # Update version/url/sha256 together for future releases.
@@ -6,8 +6,8 @@
 class Lilt < Formula
   desc "Apple Music, Audius, Jamendo, and internet-radio terminal controller"
   homepage "https://github.com/3-tiao/lilt"
-  url "https://github.com/3-tiao/lilt/releases/download/v1.0.2/lilt-v1.0.2-darwin-arm64.tar.gz"
-  sha256 "c578076efdaa84cc6fafbbdffc259dea7c336d1806914e9201653b8409edc923"
+  url "https://github.com/3-tiao/lilt/releases/download/v1.0.3/lilt-v1.0.3-darwin-arm64.tar.gz"
+  sha256 "76364b5e2ee92c7e58d5f88ba54a5df64a622fde38fe5be57f674f286af6acc4"
   license "MIT"
 
   depends_on arch: :arm64
